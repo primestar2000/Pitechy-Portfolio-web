@@ -10,13 +10,15 @@ function App() {
 
   return (
     <>
-    <div className="flex justify-center">
-      <div className="max-w-[1920px] w-full">
-            <Header />
-            <SkillsLayout />
-            <ProjectLayout />
+      <div className='  dark:bg-slate-900'>
+        <div className="flex justify-center ">
+          <div className="max-w-screen-xl w-full">
+                <Header />
+                <SkillsLayout />
+                <ProjectLayout />
+          </div>
       </div>
-    </div>
+      </div>
     </>
   )
 }

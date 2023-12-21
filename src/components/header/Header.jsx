@@ -6,14 +6,14 @@ import { faTwitter, faFontAwesome, faFacebookF, faYoutube, faInstagram, faGithub
 import { Typewriter } from 'react-simple-typewriter';
 const Header = () => (
     <>
-    <div className="w-full  md:max-h-[600px] dark:bg-black dark:text-white">
+    <div className="w-full  lg:max-h-[600px] dark:bg-slate-900  dark:text-white">
         <Nav />
-        <div className="flex justify-center">
-            <div className="w-full p-10 gap-10  max-w-screen-lg flex items-center flex-col-reverse md:flex-row ">
+        <div className="flex  justify-center">
+            <div className="flex-1  p-10 gap-10   flex items-center lg:justify-between flex-col-reverse lg:flex-row ">
                 {/* hero section write up */}
-                <div className="flex-1 flex flex-col items-center md:items-start">
-                    <h1 className="text-[30px] md:text-[44px] font-bold text-slate-500">I'm Stephen <span className="text-violet-500">Simon</span></h1>
-                    <h1 className="text-[20px] md:text-[30px] text-slate-500">
+                <div className="flex-1 flex flex-col items-center lg:items-start">
+                    <h1 className="text-[30px] lg:text-[44px] font-bold text-slate-500 dark:text-white">I'm Stephen <span className="text-violet-500">Simon</span></h1>
+                    <h1 className="text-[20px] lg:text-[30px] text-slate-500 my-3 dark:text-white">
                         {' '}
                         <span style={{  fontWeight: 'bold' }}>
                         {/* Style will be inherited from the parent element */}
@@ -33,7 +33,7 @@ const Header = () => (
                         />
                         </span>
                     </h1>
-                    <p className="text-justify text-slate-500 max-w-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facilis temporibus, dolore voluptate officiis reprehenderit eius ratione fuga, dignissimos nihil totam accusantium minus perspiciatis
+                    <p className="text-justify text-sm text-slate-500 max-w-lg dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facilis temporibus, dolore voluptate officiis reprehenderit eius ratione fuga, dignissimos nihil totam accusantium minus perspiciatis
                          laboriosam inventore voluptas ullam similique repellendus!</p>
                     <div className="flex gap-8 my-6">
                         <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faFacebookF} />
@@ -48,7 +48,7 @@ const Header = () => (
                         </button>
                 </div>
                 {/* hero section image */}
-                <div className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] bg-slate-50 rounded-full">
+                <div className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] bg-slate-50 transition-all ease-in-out delay-100 rounded-full hover:scale-150">
                     <img src={myImage} className="w-full h-full object-cover rounded-full" alt="stephen simon image" />
                 </div>
             </div>
