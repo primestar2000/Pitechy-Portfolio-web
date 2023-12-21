@@ -3,7 +3,7 @@ export default function Nav(){
         <>
         <nav className="flex justify-between p-10" >
             <div className="text-blue-500">Pitechy</div>
-            <ul className='flex w-[50%] justify-evenly'>
+            <ul className='hidden md:flex w-[50%] justify-evenly'>
                 <li><a href="#" className="hover:text-violet-500 font-semibold text-lg text-slate-500 dark:text-white">Home</a></li>
                 <li><a href="#" className="hover:text-violet-500 font-semibold text-lg text-slate-500 dark:text-white">About</a></li>
                 <li><a href="#" className="hover:text-violet-500 font-semibold text-lg text-slate-500 dark:text-white">Work</a></li>
