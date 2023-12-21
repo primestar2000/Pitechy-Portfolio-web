@@ -6,7 +6,7 @@ import { faTwitter, faFontAwesome, faFacebookF, faYoutube, faInstagram, faGithub
 import { Typewriter } from 'react-simple-typewriter';
 const Header = () => (
     <>
-    <div className="w-full h-screen md:max-h-[600px] dark:bg-black dark:text-white">
+    <div className="w-full  md:max-h-[600px] dark:bg-black dark:text-white">
         <Nav />
         <div className="flex justify-center">
             <div className="w-full p-10 gap-10  max-w-screen-lg flex items-center flex-col-reverse md:flex-row ">
