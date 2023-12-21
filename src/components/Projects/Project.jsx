@@ -16,7 +16,7 @@ const Project = () => (
             </div>
             <div className=" shadow-md lg:w-[500px] w-full h-[350px] rounded-xl flex justify-center items-center bg-black" style={{backgroundImage: `url(${projectBgImage})`}}>
                 <div className="w-[90%] h-[90%] flex justify-center items-center ">
-                    <img src={projectImage} alt="image of health pal ai" className="rounded-xl object-cover  w-full" />
+                    <img src={projectImage} alt="image of health pal ai" className="rounded-xl object-cover  h-full" />
                 </div>
             </div>
         </div>
