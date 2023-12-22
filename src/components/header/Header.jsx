@@ -12,7 +12,7 @@ const Header = () => (
             <div className="flex-1  p-10 gap-10   flex items-center lg:justify-between flex-col-reverse lg:flex-row ">
                 {/* hero section write up */}
                 <div className="flex-1 flex flex-col items-center lg:items-start">
-                    <h1 className="text-[30px] lg:text-[44px] font-bold text-slate-500 dark:text-white">I'm Stephen <span className="text-violet-500">Simon</span></h1>
+                    <h1 className="text-xl md:text-[30px] lg:text-[44px] font-bold text-slate-500 dark:text-white">I'm Stephen <span className="text-violet-500">Simon</span></h1>
                     <h1 className="text-[20px] lg:text-[30px] text-slate-500 my-3 dark:text-white">
                         {' '}
                         <span style={{  fontWeight: 'bold' }}>
@@ -33,7 +33,7 @@ const Header = () => (
                         />
                         </span>
                     </h1>
-                    <p className="text-justify text-sm text-slate-500 max-w-lg dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facilis temporibus, dolore voluptate officiis reprehenderit eius ratione fuga, dignissimos nihil totam accusantium minus perspiciatis
+                    <p className=" text-sm text-slate-500 max-w-lg dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facilis temporibus, dolore voluptate officiis reprehenderit eius ratione fuga, dignissimos nihil totam accusantium minus perspiciatis
                          laboriosam inventore voluptas ullam similique repellendus!</p>
                     <div className="flex gap-8 my-6">
                         <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faFacebookF} />

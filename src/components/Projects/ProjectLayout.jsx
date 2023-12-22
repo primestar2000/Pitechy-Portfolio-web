@@ -1,10 +1,12 @@
 import Project from "./Project";
-
+import { projects_data } from "../../assets/data";
 const ProjectLayout = () => (
     <>
         <section id="work" className="w-full p-2 lg:p-10 dark:bg-slate-900">
-            <h2 className="text-[40px] my-10 text-slate-500 font-bold text-center">Work / Projects</h2>
-            <Project />
+            <h2 className="text-[30px] my-10 text-slate-500 font-bold text-center">Work / Projects</h2>
+            {projects_data.map((data)=>(
+                <Project data={data} />
+            ))}
 
         </section>
     </>
