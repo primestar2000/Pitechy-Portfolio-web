@@ -13,10 +13,10 @@ const Project = ({data}) => (
                 <p className="text-sm ">{data.short_description}</p>
                 <div className="flex gap-4">
                     {data.tags.map((tag)=>(
-                        <Tag content={tag} />
+                        <Tag key={tag} content={tag} />
                     ))}
                 </div>
-                <button className="bg-violet-500 text-white p-2 my-5">Read More</button>
+                <button className="bg-violet-500 text-sm text-white p-2 my-5">Read More</button>
             </div>
             <div className="relative shadow-md lg:w-[500px] w-full p-2 lg:p-6 rounded-xl flex justify-center items-center bg-black" style={{backgroundImage: `url(${projectBgImage})`}}>
                 <div className="w-full h-[90%] flex justify-center items-center ">

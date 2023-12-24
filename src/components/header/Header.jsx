@@ -48,7 +48,7 @@ const Header = () => (
                         </button>
                 </div>
                 {/* hero section image */}
-                <div className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] bg-slate-50 transition-all ease-in-out delay-100 rounded-full hover:scale-150">
+                <div className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] bg-slate-50 transition-all ease-in-out delay-100 rounded-full hover:scale-125">
                     <img src={myImage} className="w-full h-full object-cover rounded-full" alt="stephen simon image" />
                 </div>
             </div>

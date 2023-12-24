@@ -5,7 +5,7 @@ const ProjectLayout = () => (
         <section id="work" className="w-full p-2 lg:p-10 dark:bg-slate-900">
             <h2 className="text-[30px] my-10 text-slate-500 font-bold text-center">Work / Projects</h2>
             {projects_data.map((data)=>(
-                <Project data={data} />
+                <Project key={data.id} data={data} />
             ))}
 
         </section>
