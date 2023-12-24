@@ -16,7 +16,8 @@ export const projects_data = [
     id: 2,
     title: "Home Automation System",
     category: "iot",
-    short_description: "",
+    short_description:
+      "Embark on the future of home living with my Arduino-based home automation system. Seamlessly control lights, appliances, and security features from your fingertips, combining innovation and convenience for a smarter, connected home experience",
     Full_description: "",
     tags: ["IOT", "arduino", "React Native"],
     live_link: "",

@@ -36,11 +36,11 @@ const Header = () => (
                     <p className=" text-sm text-slate-500 max-w-lg dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facilis temporibus, dolore voluptate officiis reprehenderit eius ratione fuga, dignissimos nihil totam accusantium minus perspiciatis
                          laboriosam inventore voluptas ullam similique repellendus!</p>
                     <div className="flex gap-8 my-6">
-                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faFacebookF} />
-                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faYoutube} />
-                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faInstagram} />
-                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faTwitter} />
-                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faGithub} />
+                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"x"} icon={faFacebookF} />
+                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"x"} icon={faYoutube} />
+                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"x"} icon={faInstagram} />
+                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"x"} icon={faTwitter} />
+                        <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"x"} icon={faGithub} />
                     </div>
                     <button className="w-fit bg-violet-500 p-3 text-lg font-bold my-6 text-white active:bg-violet-500/80 active:scale-95 hover:bg-transparent hover:border-violet-500 hover:border-2 border-solid hover:text-violet-500 transition-all ease delay-75 active:text-slate-50">
                         Get Resume
