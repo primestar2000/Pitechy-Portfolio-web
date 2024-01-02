@@ -6,7 +6,7 @@ import Tag from "../tags/Tag";
 import { faGlobe, faNetworkWired } from '@fortawesome/free-solid-svg-icons';
 const Project = ({data}) => (
     <>
-        <div className="max-w-full shadow-xl   lg:max-h-[450px] dark:bg-slate-800 m-4 items-center flex-col-reverse lg:p-10 flex lg:flex-row">
+        <div className="max-w-full shadow-xl rounded-3xl  lg:max-h-[450px] dark:bg-slate-800 m-4 items-center flex-col-reverse lg:p-10 flex lg:flex-row">
             <div className="lg:w-1/2 p-6  lg:p-10 text-slate-500 dark:text-white">
                 <h2 className="font-bold text-2xl text-center lg:text-left my-2">{data.title}</h2>
                 {/* <p className="font-semibold text-xl text-center lg:text-left"><i>{`Website`}</i></p> */}
