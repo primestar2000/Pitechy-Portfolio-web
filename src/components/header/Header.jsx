@@ -21,7 +21,7 @@ const Header = () => (
                             words={[
                             'FullStack Dev',
                             'React js Dev',
-                            'React Native Dev (Mobile App)', 
+                            'React Native Dev', 
                             'Laravel', 
                             'Valina js']}
                             loop={Infinity}
