@@ -18,7 +18,7 @@ const Project = ({data}) => (
                 </div>
                 <button className="bg-violet-500 text-sm text-white p-2 my-5">Read More</button>
             </div>
-            <div className="relative shadow-md lg:w-[500px] w-full p-2 lg:p-6 rounded-xl flex justify-center items-center bg-black" style={{backgroundImage: `url(${projectBgImage})`}}>
+            <div className="relative shadow-md lg:w-[500px] w-full p-2 lg:p-6 rounded-xl flex justify-center items-center bg-black" style={{backgroundImage: `url(${projectBgImage})`}} >
                 <div className="w-full h-[90%] flex justify-center items-center ">
                     <img src={projectImage} alt="image of health pal ai" className="rounded-xl object-cover  h-full" />
                 </div>
