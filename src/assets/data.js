@@ -1,3 +1,4 @@
+import userTestImg from "./images/user_test.jpg";
 export const projects_data = [
   {
     id: 1,
@@ -24,6 +25,18 @@ export const projects_data = [
     github_repo: "",
     Youtube_link: "",
   },
+  {
+    id: 3,
+    title: "Realtime language translation app",
+    category: "web",
+    short_description:
+      "Embark on the future of home living with my Arduino-based home automation system. Seamlessly control lights, appliances, and security features from your fingertips, combining innovation and convenience for a smarter, connected home experience",
+    Full_description: "",
+    tags: ["React JS", "OpenAI API", "Google Translate API"],
+    live_link: "",
+    github_repo: "",
+    Youtube_link: "",
+  },
   // {
   //     id: 2,
   //     title: "",
@@ -35,4 +48,28 @@ export const projects_data = [
   //     githubRepo: "",
   //     YoutubeLink: "",
   // },
+];
+
+export const testimonial_data = [
+  {
+    id: 1,
+    username: "Ameh Monday Augustine",
+    title: "",
+    writeup: "",
+    image: userTestImg,
+  },
+  {
+    id: 2,
+    username: "Ekemezie Justice",
+    title: "C.E.O TTEBIFY",
+    writeup: "",
+    image: "",
+  },
+  {
+    id: 3,
+    username: "Lucky Onuche",
+    title: "",
+    writeup: "",
+    image: userTestImg,
+  },
 ];

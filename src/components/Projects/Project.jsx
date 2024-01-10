@@ -11,7 +11,7 @@ const Project = ({data}) => (
                 <h2 className="font-bold text-2xl text-center lg:text-left my-2">{data.title}</h2>
                 {/* <p className="font-semibold text-xl text-center lg:text-left"><i>{`Website`}</i></p> */}
                 <p className="text-sm ">{data.short_description}</p>
-                <div className="flex gap-4">
+                <div className="flex space-x-4 flex-wrap">
                     {data.tags.map((tag)=>(
                         <Tag key={tag} content={tag} />
                     ))}

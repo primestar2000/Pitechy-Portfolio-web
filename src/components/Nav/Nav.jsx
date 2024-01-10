@@ -26,8 +26,8 @@ export default function Nav(){
                 </div>
             </div>
             <ul className={`${!navigationExpanded && 'hidden'} md:flex flex-col text-center items-center md:flex-row  w-[50%] justify-evenly`}>
-                <li><a  href="#home" onClick={()=>setNavigationExpanded(false)} className="hover:text-violet-500 font-semibold text-sm text-slate-500 dark:text-white">Home</a></li>
-                <li><a  href="#about" onClick={()=>setNavigationExpanded(false)} className="hover:text-violet-500 font-semibold text-sm text-slate-500 dark:text-white">About</a></li>
+                {/* <li><a  href="#home" onClick={()=>setNavigationExpanded(false)} className="hover:text-violet-500 font-semibold text-sm text-slate-500 dark:text-white">Home</a></li>
+                <li><a  href="#about" onClick={()=>setNavigationExpanded(false)} className="hover:text-violet-500 font-semibold text-sm text-slate-500 dark:text-white">About</a></li> */}
                 <li><a  href="#work" onClick={()=>setNavigationExpanded(false)} className="hover:text-violet-500 font-semibold text-sm text-slate-500 dark:text-white">Work</a></li>
                 <li><a  href="#skills" onClick={()=>setNavigationExpanded(false)} className="hover:text-violet-500 font-semibold text-sm text-slate-500 dark:text-white">Skills</a></li>
                 <li><a  href="#testimonial" onClick={()=>setNavigationExpanded(false)} className="hover:text-violet-500 font-semibold text-sm text-slate-500 dark:text-white">Testimonial</a></li>
