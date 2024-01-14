@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
 return (    <>
-        <section id="Contact" className="w-full p-2 lg:p-10 dark:bg-slate-900">
+        <section id="contact" className="w-full p-2 lg:p-10 dark:bg-slate-900">
             <h2 className="text-[30px] my-10 text-slate-500 font-bold text-center">Contact Me</h2>
-            <div className="flex shadow-md justify-center lg:p-10 rounded-3xl">
-                <div className=" flex flex-col lg:justify-between lg:flex-row">
+            <div className=" flex shadow-md justify-center lg:p-10 rounded-3xl">
+                <div className="w-full flex flex-col items-center lg:justify-between lg:flex-row">
                     <div className="hidden w-[400px] flex-1 p-6 lg:flex flex-col justify-center rounded-3xl space-y-6 bg-blue-950">
                         <p className="text-slate-400 text-[20px] font-semibold">Get In touch</p>
                         <div className="flex items-center gap-4">
@@ -32,7 +32,7 @@ return (    <>
                             <FontAwesomeIcon icon={faLinkedin} className="text-[40px] text-slate-400" />
                         </div>
                     </div>
-                    <div className="w-[400px] p-4 flex flex-col space-y-6">
+                    <div className="w-full max-w-[400px] p-4 flex flex-col space-y-6">
                         <div className="w-full p-4 border-[2px] border-solid border-slate-500 rounded-md">
                             <input type="text" name="" id="" className="w-full bg-transparent dark:text-slate-300  outline-none" placeholder="Name" />
                         </div>

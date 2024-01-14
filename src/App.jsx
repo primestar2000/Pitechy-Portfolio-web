@@ -6,6 +6,7 @@ import SkillsLayout from './components/skills/SkillsLayout'
 import ProjectLayout from './components/Projects/ProjectLayout'
 import TestimonialLayout from './components/Testimonial/TestimonialLayout'
 import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
                 <ProjectLayout />
                 <TestimonialLayout />
                 <Contact />
+                <Footer />
           </div>
       </div>
       </div>
