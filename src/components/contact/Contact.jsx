@@ -33,16 +33,16 @@ return (    <>
                         </div>
                     </div>
                     <div className="w-full max-w-[400px] p-4 flex flex-col space-y-6">
-                        <div className="w-full p-4 border-[2px] border-solid border-slate-500 rounded-md">
+                        <div className="w-full p-2 border-[2px] border-solid border-slate-500 rounded-md">
                             <input type="text" name="" id="" className="w-full bg-transparent dark:text-slate-300  outline-none" placeholder="Name" />
                         </div>
-                        <div className="w-full p-4 border-[2px] border-solid border-slate-500 rounded-md">
+                        <div className="w-full p-2 border-[2px] border-solid border-slate-500 rounded-md">
                             <input type="email" name="" id="" className="w-full bg-transparent dark:text-slate-300  outline-none" placeholder="Email" />
                         </div>
-                        <div className="w-full p-4 border-[2px] border-solid border-slate-500 rounded-md">
+                        <div className="w-full p-2 border-[2px] border-solid border-slate-500 rounded-md">
                             <textarea type="text" name="" id="" className="w-full bg-transparent dark:text-slate-300  outline-none" placeholder="Message" />
                         </div>
-                        <button className="w-full p-4 border-none  bg-violet-500 text-white rounded-md">
+                        <button className="w-full p-2 border-none  bg-violet-500 text-white rounded-md">
                             Submit
                         </button>
                     </div>

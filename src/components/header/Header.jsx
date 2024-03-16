@@ -34,8 +34,7 @@ const Header = () => (
                         />
                         </span>
                     </h1>
-                    <p className=" text-sm  text-slate-500 max-w-lg dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facilis temporibus, dolore voluptate officiis reprehenderit eius ratione fuga, dignissimos nihil totam accusantium minus perspiciatis
-                         laboriosam inventore voluptas ullam similique repellendus!</p>
+                    <p className=" lg:text-lg  text-slate-500 max-w-lg dark:text-white">Welcome to my Code Haven! I'm <span className="text-violet-500">Stephen simon</span>, a passionate software developer skilled in crafting elegant, user-friendly solutions for diverse challenges in the dynamic world of coding.</p>
                     <div className="flex gap-8 my-6">
                         <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease text-2xl" icon={faFacebookF} />
                         <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease text-2xl" icon={faYoutube} />

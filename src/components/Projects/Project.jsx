@@ -12,9 +12,9 @@ const Project = ({data}) => (
                 {/* <p className="font-semibold text-xl text-center lg:text-left"><i>{`Website`}</i></p> */}
                 <p className="text-sm ">{data.short_description}</p>
                 <div className="flex space-x-4 flex-wrap">
-                    {data.tags.map((tag)=>(
+                    {/* {data.tags.map((tag)=>(
                         <Tag key={tag} content={tag} />
-                    ))}
+                    ))} */}
                 </div>
                 <button className="bg-violet-500 text-sm text-white p-2 my-5">Read More</button>
             </div>
@@ -25,7 +25,7 @@ const Project = ({data}) => (
                 <div className="w-full h-full flex flex-col justify-center items-center gap-10 bg-black absolute opacity-0 hover:opacity-80">
                     <h1 className="text-white text-[30px] text-center">View live Demo on</h1>
                     <div className='flex gap-4'>
-                        <a href={"#"}>
+                        {/* <a href={"#"}>
                             <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faGlobe} />
                         </a>
                         <a href={data.Youtube_link}>
@@ -33,7 +33,7 @@ const Project = ({data}) => (
                         </a>
                         <a href={data.github_repo}>
                             <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faGithub} />
-                        </a>
+                        </a> */}
                     </div>
 
                 </div>
