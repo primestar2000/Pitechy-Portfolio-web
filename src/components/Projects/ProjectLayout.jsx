@@ -9,6 +9,7 @@ const ProjectLayout = () => {
     useEffect(()=>{
         const fetchProjects = async () => {
             const data = getDocs(projectCollections);
+            console.log(data);
             setProjects((await data).docs.map((doc)=>({...doc.data(), id: doc.id})))
         }
         fetchProjects();
