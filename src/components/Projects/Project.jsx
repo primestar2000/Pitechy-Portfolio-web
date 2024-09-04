@@ -8,7 +8,7 @@ const Project = ({data}) => (
     <>
         <div className="max-w-full shadow-xl rounded-3xl  lg:max-h-[450px] dark:bg-slate-800 m-4 items-center flex-col-reverse lg:p-10 flex lg:flex-row">
             <div className="lg:w-1/2 p-6  lg:p-10 text-slate-500 dark:text-white">
-                <h2 className="font-bold text-2xl text-center lg:text-left my-2">{data.title}</h2>
+                <h2 className="font-bold text-xl text-center lg:text-left my-2">{data.title}</h2>
                 {/* <p className="font-semibold text-xl text-center lg:text-left"><i>{`Website`}</i></p> */}
                 <p className="text-sm ">{data.short_description}</p>
                 <div className="flex space-x-4 flex-wrap">
@@ -20,7 +20,7 @@ const Project = ({data}) => (
             </div>
             <div className="relative shadow-md lg:w-[500px] w-full p-2 lg:p-6 rounded-xl flex justify-center items-center bg-black" style={{backgroundImage: `url(${projectBgImage})`}} >
                 <div className="w-full h-[90%] flex justify-center items-center ">
-                    <img src={projectImage} alt="image of health pal ai" className="rounded-xl object-cover  h-full" />
+                    <img src={data.image} alt="image of health pal ai" className="rounded-xl object-cover  h-full" />
                 </div>
                 <div className="w-full h-full flex flex-col justify-center items-center gap-10 bg-black absolute opacity-0 hover:opacity-80">
                     <h1 className="text-white text-[30px] text-center">View live Demo on</h1>

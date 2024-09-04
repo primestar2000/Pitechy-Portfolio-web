@@ -7,7 +7,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import Resume from "../../assets/NEW-RESUME.pdf";
 
 const Header = () => (
-    <header className="w-full lg:max-h-[600px] bg-gradient-to-r from-blue-500 to-teal-500 dark:from-gray-800 dark:to-gray-900 dark:text-white">
+    <header className="w-full lg:max-h-[650px] bg-gradient-to-r from-blue-500 to-teal-500 dark:from-gray-800 dark:to-gray-900 dark:text-white">
         <Nav />
         <div className="flex justify-center">
             <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-between p-10 gap-10 w-full max-w-6xl">
