@@ -12,7 +12,7 @@ const Project = ({data}) => (
             <div className="lg:w-1/2 p-6  lg:p-10 text-slate-500 dark:text-white">
                 <h2 className="font-bold text-xl text-center lg:text-left my-2">{data.title}</h2>
                 {/* <p className="font-semibold text-xl text-center lg:text-left"><i>{`Website`}</i></p> */}
-                <p className="text-sm text-justify">{data.short_description}</p>
+                <p className="lg:text-sm text-xs  text-justify">{data.short_description}</p>
                 <div className="flex space-x-4 flex-wrap">
                     {/* {data.tags.map((tag)=>(
                         <Tag key={tag} content={tag} />
