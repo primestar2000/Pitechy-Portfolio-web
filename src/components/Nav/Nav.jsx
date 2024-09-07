@@ -28,10 +28,10 @@ export default function Nav(){
             <ul className={`${!navigationExpanded && 'hidden'} md:flex flex-col text-center items-center md:flex-row  w-[50%] justify-end`}>
                 {/* <li><a  href="#home" onClick={()=>setNavigationExpanded(false)} className="hover:text-violet-500 font-semibold text-sm text-slate-500 dark:text-white">Home</a></li>
                 <li><a  href="#about" onClick={()=>setNavigationExpanded(false)} className="hover:text-violet-500 font-semibold text-sm text-slate-500 dark:text-white">About</a></li> */}
-                <li><a  href="#work" onClick={()=>setNavigationExpanded(false)} className="hover:bg-violet-500 p-3 font-semibold text-sm text-slate-500 dark:text-white">Portfolio</a></li>
-                <li><a  href="#skills" onClick={()=>setNavigationExpanded(false)} className="hover:bg-violet-500 p-3 font-semibold text-sm text-slate-500 dark:text-white">Skills</a></li>
-                <li><a  href="#testimonial" onClick={()=>setNavigationExpanded(false)} className="hover:bg-violet-500 p-3 font-semibold text-sm text-slate-500 dark:text-white">Testimonial</a></li>
-                <li><a href="#contact" onClick={()=>setNavigationExpanded(false)} className="hover:bg-violet-500 p-3 font-semibold text-sm text-slate-500 dark:text-white">Contact</a></li>
+                <li><a  href="#work" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Portfolio</a></li>
+                <li><a  href="#skills" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Skills</a></li>
+                <li><a  href="#testimonial" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Testimonial</a></li>
+                <li><a href="#contact" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Contact</a></li>
             </ul>
 
         </nav>

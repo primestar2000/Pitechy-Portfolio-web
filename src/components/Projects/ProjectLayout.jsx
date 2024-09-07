@@ -14,9 +14,9 @@ const ProjectLayout = () => {
         }
         fetchProjects();
     },[])
-    useEffect(()=>{
-        console.log(projects);
-    },[projects])
+    // useEffect(()=>{
+    //     console.log(projects);
+    // },[projects])
 return (    <>
         <section id="work" className="w-full p-2 lg:p-10 dark:bg-slate-900">
             <h2 className="text-[30px] my-10 text-slate-500 font-bold text-center">Portfolio</h2>

@@ -4,18 +4,22 @@ import projectBgImage from "../../assets/images/Frost.jpg"
 import projectImage from "../../assets/images/healthpal.png"
 import Tag from "../tags/Tag";
 import { faGlobe, faNetworkWired } from '@fortawesome/free-solid-svg-icons';
+import CategorySection from './CategorySection';
 const Project = ({data}) => (
+
     <>
         <div className="max-w-full shadow-xl rounded-3xl  lg:max-h-[450px] dark:bg-slate-800 m-4 items-center flex-col-reverse lg:p-10 flex lg:flex-row">
             <div className="lg:w-1/2 p-6  lg:p-10 text-slate-500 dark:text-white">
                 <h2 className="font-bold text-xl text-center lg:text-left my-2">{data.title}</h2>
                 {/* <p className="font-semibold text-xl text-center lg:text-left"><i>{`Website`}</i></p> */}
-                <p className="text-sm ">{data.short_description}</p>
+                <p className="text-sm text-justify">{data.short_description}</p>
                 <div className="flex space-x-4 flex-wrap">
                     {/* {data.tags.map((tag)=>(
                         <Tag key={tag} content={tag} />
                     ))} */}
+
                 </div>
+                <CategorySection project={data} />
                 <button className="bg-violet-500 text-sm text-white p-2 my-5">Read More</button>
             </div>
             <div className="relative shadow-md lg:w-[500px] w-full p-2 lg:p-6 rounded-xl flex justify-center items-center bg-black" style={{backgroundImage: `url(${projectBgImage})`}} >
