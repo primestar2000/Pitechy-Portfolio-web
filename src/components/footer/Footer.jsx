@@ -1,7 +1,7 @@
 const Footer = () => (
     <>
         <div className="w-full h-[1px] bg-slate-500"></div>
-        <div className="w-full flex flex-col py-10">
+        <div className="w-full flex flex-col py-10 dark:bg-slate-900">
             <div className="w-full flex-col p-2 flex items-center">
                 <p className="text-violet-400 text-center font-bold">Quick links</p>
                 <ul className="w-full max-w-[700px] p-4 flex justify-between">

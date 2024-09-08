@@ -9,15 +9,17 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from './components/Auth/login';
+import { AppContext } from './context/appContext';
 
 function App() {
-
+const [darkMode, setDarkMode] =  useState(false);
 
   return (
     <>
+    <AppContext.Provider value={{darkMode, setDarkMode}}>
     <Router>
     
-      <div className='  dark:bg-slate-900'>
+      <div className={` ${darkMode && 'dark'} dark:bg-slate-900`}>
         <div className="flex justify-center ">
           <div className="max-w-screen-xl w-full">
             <Routes>
@@ -38,6 +40,7 @@ function App() {
       </div>
       
     </Router>
+    </AppContext.Provider>
     </>
   )
 }

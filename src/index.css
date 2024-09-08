@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  @apply transition-colors duration-200
+}
 @font-face {
   font-family: "Poppins Medium";
   src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
