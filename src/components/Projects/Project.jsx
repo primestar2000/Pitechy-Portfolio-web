@@ -9,7 +9,7 @@ const Project = ({data}) => (
 
     <>
         <div className="max-w-full shadow-xl rounded-3xl  lg:max-h-[450px] dark:bg-slate-800 m-4 items-center flex-col-reverse lg:p-10 flex lg:flex-row">
-            <div className="lg:w-1/2 p-6  lg:p-10 text-slate-500 dark:text-white">
+            <div className="lg:w-1/2 p-6  lg:p-10 text-gray-500 dark:text-gray-400">
                 <h2 className="font-bold text-xl text-center lg:text-left my-2">{data.title}</h2>
                 {/* <p className="font-semibold text-xl text-center lg:text-left"><i>{`Website`}</i></p> */}
                 <p className="lg:text-sm text-xs  text-justify">{data.short_description}</p>

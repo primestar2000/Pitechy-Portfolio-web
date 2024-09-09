@@ -12,10 +12,10 @@ export default function Nav(){
             <div className="w-full  items-center md:w-fit justify-between flex ">
                 <div className="text-blue-500 flex items-center">
                     <img src={Logo} className="w-16" alt="" />
-                    <span className="-m-3 font-bold text-2xl">itechy</span>
+                    <span className="hidden lg:inline font-bold text-2xl">itechy</span>
                 </div>
             <button className="block lg:hidden" onClick={()=>{ setDarkMode(!darkMode) }}>
-                <FontAwesomeIcon icon={darkMode ? faSun : faMoon } className={'text-2xl' + darkMode ? 'text-amber-500' : 'text-neutral-700'}  />    
+                <FontAwesomeIcon icon={darkMode ? faSun : faMoon } className={'text-3xl' + darkMode ? 'text-amber-500' : 'text-neutral-700'}  />    
             </button>
                 <div className="md:hidden"
                 onClick={()=>setNavigationExpanded(!navigationExpanded)}
@@ -39,7 +39,7 @@ export default function Nav(){
                 <li><a href="#contact" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Contact</a></li>
             </ul>
             <button className="hidden lg:block" onClick={()=>{ setDarkMode(!darkMode) }}>
-                <FontAwesomeIcon icon={darkMode ? faSun : faMoon } className={'text-2xl' + darkMode ? 'text-amber-500' : 'text-neutral-700'}  />    
+                <FontAwesomeIcon icon={darkMode ? faSun : faMoon } className={'text-3xl' + darkMode ? 'text-amber-500' : 'text-neutral-700'}  />    
             </button>
         </nav>
         </>
