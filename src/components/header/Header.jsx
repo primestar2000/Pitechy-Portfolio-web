@@ -5,6 +5,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faFacebookF, faYoutube, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Typewriter } from 'react-simple-typewriter';
 import Resume from "../../assets/NEW-RESUME.pdf";
+import SocialMediaSection from "./SocialMediaSection";
 
 const Header = () => (
     <header className="w-full lg:max-h-[650px] bg-gradient-to-r from-blue-500 to-teal-500 dark:from-gray-800 dark:to-gray-900 dark:text-white">
@@ -35,11 +36,12 @@ const Header = () => (
                     </p>
                     
                     <div className="flex gap-6 my-6 justify-center lg:justify-start">
-                        <FontAwesomeIcon className="text-gray-200 hover:text-yellow-400 hover:scale-110 transition-transform duration-300" icon={faFacebookF} />
+                        <SocialMediaSection />
+                        {/* <FontAwesomeIcon className="text-gray-200 hover:text-yellow-400 hover:scale-110 transition-transform duration-300" icon={faFacebookF} />
                         <FontAwesomeIcon className="text-gray-200 hover:text-yellow-400 hover:scale-110 transition-transform duration-300" icon={faYoutube} />
                         <FontAwesomeIcon className="text-gray-200 hover:text-yellow-400 hover:scale-110 transition-transform duration-300" icon={faInstagram} />
                         <FontAwesomeIcon className="text-gray-200 hover:text-yellow-400 hover:scale-110 transition-transform duration-300" icon={faTwitter} />
-                        <FontAwesomeIcon className="text-gray-200 hover:text-yellow-400 hover:scale-110 transition-transform duration-300" icon={faGithub} />
+                        <FontAwesomeIcon className="text-gray-200 hover:text-yellow-400 hover:scale-110 transition-transform duration-300" icon={faGithub} /> */}
                     </div>
                     
                     <a href={Resume} download="stephen_resume.pdf">

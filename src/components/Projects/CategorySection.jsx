@@ -19,7 +19,7 @@ export default function CategorySection({ project }) {
                     .map(categoryDoc => ({ id: categoryDoc.id, ...categoryDoc.data() }));
 
                 setProjectCatList(projectCategories);
-                console.log(projectCategories);  // For debugging
+                // console.log(projectCategories);  // For debugging
             } catch (error) {
                 console.error("Error fetching categories:", error);
             }
@@ -30,8 +30,7 @@ export default function CategorySection({ project }) {
 
     return (
         <div>
-            <h3>Project Categories</h3>
-            <ul className='flex flex-wrap'>
+            <ul className='flex flex-wrap content-start leading-none m-0 gap-0'>
                 {projectCatList.map(category => (
                     <Tag key={category.id} content={category} />
                 ))}
