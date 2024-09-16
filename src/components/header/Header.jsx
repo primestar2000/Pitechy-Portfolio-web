@@ -53,7 +53,7 @@ const Header = () => (
                 </div>
                 
                 {/* Hero Section Image */}
-                <div className="w-[300px] h-[300px] bg-gray-100 rounded-full overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300">
+                <div className="w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] bg-gray-100 rounded-full overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300">
                     <img src={myImage} className="w-full h-full object-cover" alt="Stephen Simon" />
                 </div>
             </div>

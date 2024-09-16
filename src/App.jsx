@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { initializeApp } from 'firebase/app';
 import './App.css'
 import Header from './components/header/Header'
@@ -10,10 +10,20 @@ import Footer from './components/footer/Footer'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from './components/Auth/login';
 import { AppContext } from './context/appContext';
+import SplashScreen from './components/splash-screen/SplashScreen';
 
 function App() {
 const [darkMode, setDarkMode] =  useState(false);
+const [loading, setLoading] = useState(true);
 
+useEffect(()=>{
+  setLoading(false);
+},[])
+if (loading) {
+  return(
+    <SplashScreen />
+  )
+}
   return (
     <>
     <AppContext.Provider value={{darkMode, setDarkMode}}>

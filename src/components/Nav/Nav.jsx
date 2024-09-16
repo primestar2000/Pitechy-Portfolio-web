@@ -1,18 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from "../../assets/images/logo.png"
+import LogoSmall from "../../assets/images/mainLogo.png"
+import Logo from "../../assets/images/horizontalLogo.png"
 import { faBars, faCross, faMoon, faSun, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useContext, useState } from "react";
 import { AppContext } from "../../context/appContext";
+import LogoIcon from "../icon/logo";
 export default function Nav(){
     const [navigationExpanded, setNavigationExpanded] = useState(false);
     const {darkMode, setDarkMode} = useContext(AppContext);
     return(
         <>
-        <nav className={`${navigationExpanded && 'bg-slate-50 dark:bg-slate-800'} bg-[#ffffff81] dark:bg-slate-800 w-full backdrop-blur-sm justify-between flex flex-col md:flex-row px-6  items-center`} >
+        <nav className={`${navigationExpanded && 'bg-slate-50 dark:bg-slate-800'} h-16 flex justify-center bg-[#ffffff81] dark:bg-slate-800 w-full backdrop-blur-sm lg:justify-between flex-col md:flex-row px-6  items-center`} >
             <div className="w-full  items-center md:w-fit justify-between flex ">
                 <div className="text-blue-500 flex items-center">
-                    <img src={Logo} className="w-16" alt="" />
-                    <span className="hidden lg:inline font-bold text-2xl">itechy</span>
+                    <LogoIcon color={darkMode ? "orange" : "#1b1919"} size={"100"} />
+                    {/* <img src={Logo} className="h-10 hidden lg:block" alt="" />
+                    <img src={LogoSmall} className="h-10 lg:hidden" alt="" /> */}
+                    {/* <span className="hidden lg:inline font-bold text-2xl">P
+                        itechy</span> */}
                 </div>
             <button className="block lg:hidden" onClick={()=>{ setDarkMode(!darkMode) }}>
                 <FontAwesomeIcon icon={darkMode ? faSun : faMoon } className={'text-3xl' + darkMode ? 'text-amber-500' : 'text-neutral-700'}  />    
