@@ -11,7 +11,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from './components/Auth/login';
 import { AppContext } from './context/appContext';
 import SplashScreen from './components/splash-screen/SplashScreen';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
 const [darkMode, setDarkMode] =  useState(false);
 const [loading, setLoading] = useState(true);
@@ -41,6 +42,7 @@ if (loading) {
                   <TestimonialLayout />
                   <Contact />
                   <Footer />
+                  <ToastContainer />
                 </>
               } />
               <Route path='/login' Component={LoginPage} />
