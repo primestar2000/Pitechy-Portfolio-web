@@ -31,7 +31,7 @@ const Header = () => (
                                 />
                         </span>
                     </h2>
-                    <p className="text-sm lg:text-[16px] 2xl:text-[24px] leading-normal text-justify text-gray-300 dark:text-gray-400  mx-auto lg:mx-0">
+                    <p className="text-sm lg:text-[16px] 2xl:text-[24px] leading-normal text-center md:text-left text-gray-300 dark:text-gray-400  mx-auto lg:mx-0">
                         Welcome to my Code Haven! I'm <span className="text-yellow-400">Stephen Simon</span>, a passionate software developer skilled in crafting elegant, user-friendly solutions for diverse challenges in the dynamic world of coding.
                     </p>
                     
@@ -53,7 +53,7 @@ const Header = () => (
                 </div>
                 
                 {/* Hero Section Image */}
-                <div className="w-[250px] h-[250px] lg:w-[450px] lg:h-[450px] bg-gray-100 rounded-full overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300">
+                <div className="w-[250px] h-[250px] lg:w-[450px] lg:h-[450px] dark:shadow-yellow-400 bg-gray-100 rounded-full overflow-hidden shadow-xl transition-transform hover:scale-105 duration-300">
                     <img src={myImage} className="w-full h-full object-cover" alt="Stephen Simon" />
                 </div>
             </div>

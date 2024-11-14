@@ -4,7 +4,7 @@ import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
 
 const SkillsLayout = () => (
     <>
-        <section id="skills" className=" lg:p-10 dark:bg-slate-900">
+        <section id="skills" className="px-4 lg:p-10 dark:bg-slate-900">
             <div className="max-w-[1920px] mx-auto">
                 <h2 className="text-[30px] py-10 text-slate-500 font-bold text-center">Skills</h2>
                 <div className="flex flex-col gap-5 lg:flex-row justify-evenly items-center">
