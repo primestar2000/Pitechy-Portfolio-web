@@ -12,7 +12,7 @@ const ProjectLayout = () => {
         setLoading(true);
             const fetchProjects = async () => {
                 try {
-                    const data = getDocs(projectCollections);
+                    const data = await getDocs(projectCollections);
                     console.log(data);
                     setProjects((await data).docs.map((doc)=>({...doc.data(), id: doc.id})))
                     setLoading(false);

@@ -28,7 +28,7 @@ export default function SocialMediaSection() {
         setLoading(false);
         setSocialMediaCollection(socialmediaList.docs.map(doc => doc.data()));
       } catch (error) {
-        console.log(error);
+        console.log('this is the error',error);
         
       }
     };

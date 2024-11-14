@@ -8,14 +8,14 @@ import Resume from "../../assets/NEW-RESUME.pdf";
 import SocialMediaSection from "./SocialMediaSection";
 
 const Header = () => (
-    <header className="w-full lg:max-h-[650px] bg-gradient-to-r from-blue-500 to-teal-500 dark:from-gray-800 dark:to-gray-900 dark:text-white">
-        <Nav />
-        <div className="flex justify-center">
-            <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-between p-10 gap-10 w-full max-w-6xl">
+    <header className="mx-auto bg-gradient-to-r from-blue-500 to-teal-500 dark:from-gray-800 dark:to-gray-900 dark:text-white">
+            <Nav />
+        <div className=" w-full max-w-[1920px] mx-auto min-h-[700px] flex flex-col justify-center  ">
+            <div className="h-full flex flex-col-reverse lg:flex-row items-center lg:justify-between p-10 gap-10 w-full ">
                 
                 {/* Hero Section Write-up */}
-                <div className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white dark:text-gray-100">
+                <div className="w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[55px] font-extrabold text-white dark:text-gray-100">
                         I'm <span className="text-yellow-400">Stephen</span> <span className="text-yellow-400">Simon</span>
                     </h1>
                     <h2 className="text-xl lg:text-2xl text-gray-200 my-3 dark:text-gray-300">
@@ -28,10 +28,10 @@ const Header = () => (
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                            />
+                                />
                         </span>
                     </h2>
-                    <p className="text-sm text-justify text-gray-300 dark:text-gray-400 max-w-lg mx-auto lg:mx-0">
+                    <p className="text-sm lg:text-[16px] 2xl:text-[24px] leading-normal text-justify text-gray-300 dark:text-gray-400  mx-auto lg:mx-0">
                         Welcome to my Code Haven! I'm <span className="text-yellow-400">Stephen Simon</span>, a passionate software developer skilled in crafting elegant, user-friendly solutions for diverse challenges in the dynamic world of coding.
                     </p>
                     
@@ -53,7 +53,7 @@ const Header = () => (
                 </div>
                 
                 {/* Hero Section Image */}
-                <div className="w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] bg-gray-100 rounded-full overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300">
+                <div className="w-[250px] h-[250px] lg:w-[450px] lg:h-[450px] bg-gray-100 rounded-full overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300">
                     <img src={myImage} className="w-full h-full object-cover" alt="Stephen Simon" />
                 </div>
             </div>
