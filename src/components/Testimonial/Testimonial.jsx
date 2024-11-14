@@ -14,9 +14,9 @@ return(
                     }
                 </div>
                 <div className="relative flex flex-col gap-1 ">
-                    <p className=" dark:text-white text-center">{data.username}</p>
+                    <p className="text-amber-400 dark:text-white text-center">{data.username}</p>
                     <p className="text-sm text-center text-slate-500 dark:text-white italic cursive">{data.title}</p>
-                    <p className="text-[11px] text-slate-500 dark:text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequatur earum eligendi, fugiat iste nemo error ullam minima dolorum dolorem in sint quis et  </p>
+                    <p className="text-[11px] text-slate-500 dark:text-white text-justify">{ data.writeup }</p>
                 </div>
             </div>
         </div>
