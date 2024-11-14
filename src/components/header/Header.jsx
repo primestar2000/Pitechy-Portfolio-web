@@ -14,7 +14,7 @@ const Header = () => (
             <div className="h-full flex flex-col-reverse lg:flex-row items-center lg:justify-between p-10 gap-10 w-full ">
                 
                 {/* Hero Section Write-up */}
-                <div className="w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start">
+                <div className="lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[55px] font-extrabold text-white dark:text-gray-100">
                         I'm <span className="text-yellow-400">Stephen</span> <span className="text-yellow-400">Simon</span>
                     </h1>
