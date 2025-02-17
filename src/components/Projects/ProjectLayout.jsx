@@ -2,12 +2,13 @@ import Project from "./Project";
 import { projects_data } from "../../assets/data";
 import { useEffect, useState } from "react";
 import { db } from "../../assets/firebase-config";
-import {collection, getDocs} from "firebase/firestore"
+import {collection, getDocs, query, where} from "firebase/firestore"
 import Loader from "./Loader";
+import { toast } from "react-toastify";
 const ProjectLayout = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
-    const projectCollections = collection(db, "projects")
+    const projectCollections = query(collection(db, "projects"), where('status', '==', 1))
     useEffect(()=>{
         setLoading(true);
             const fetchProjects = async () => {
@@ -17,7 +18,7 @@ const ProjectLayout = () => {
                     setProjects((data).docs.map((doc)=>({...doc.data(), id: doc.id})))
                     setLoading(false);
                 } catch (error) {
-                    
+                    toast.error('Couldn`t Load Projects, Please check your network.')
                 }
             } 
             fetchProjects();

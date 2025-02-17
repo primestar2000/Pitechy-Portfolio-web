@@ -15,11 +15,10 @@ export default function CategorySection({ project }) {
                 
                 // Filter categories that are in the project.categories array
                 const projectCategories = categoriesSnapshot.docs
-                    .filter(categoryDoc => project.categories.includes(categoryDoc.id))
+                    .filter(categoryDoc => project.categories?.includes(categoryDoc.id))
                     .map(categoryDoc => ({ id: categoryDoc.id, ...categoryDoc.data() }));
 
                 setProjectCatList(projectCategories);
-                // console.log(projectCategories);  // For debugging
             } catch (error) {
                 console.error("Error fetching categories:", error);
             }

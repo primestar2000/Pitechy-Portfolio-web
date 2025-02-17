@@ -14,6 +14,7 @@ import SplashScreen from './components/splash-screen/SplashScreen';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { lazy, LazyExoticComponent } from "react";
+import ProjectPage from './pages/ProjectPage';
 
 const HomePage = lazy(()=> import('./pages/HomePage')) 
 
@@ -43,6 +44,11 @@ if (loading) {
                   <HomePage />
                 </Suspense>
               } />
+              <Route path='/project/:id' element={
+                <Suspense fallback={<SplashScreen />}>
+                  <ProjectPage />
+                </Suspense>
+              }/>
               <Route path='/login' Component={LoginPage} />
             </Routes>
           </div>

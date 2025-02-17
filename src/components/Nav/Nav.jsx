@@ -33,18 +33,18 @@ export default function Nav(){
                 </div>
             </div>
             <ul className={` hidden  text-center items-center md:flex  w-[50%] justify-end`}>                
-                <li><a  href="#work" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Portfolio</a></li>
-                <li><a  href="#skills" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Skills</a></li>
-                <li><a  href="#testimonial" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Testimonial</a></li>
-                <li><a href="#contact" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Contact</a></li>
+                <li><a  href="#work" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-medium text-sm text-slate-500 dark:text-white">Portfolio</a></li>
+                <li><a  href="#skills" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-medium text-sm text-slate-500 dark:text-white">Skills</a></li>
+                <li><a  href="#testimonial" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-medium text-sm text-slate-500 dark:text-white">Testimonial</a></li>
+                <li><a href="#contact" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-medium text-sm text-slate-500 dark:text-white">Contact</a></li>
             </ul>
             <button className="hidden lg:block" onClick={()=>{ setDarkMode(!darkMode) }}>
                 <FontAwesomeIcon icon={darkMode ? faSun : faMoon } className={'text-3xl' + darkMode ? 'text-amber-500' : 'text-neutral-700'}  />    
             </button>
             {/* side nav */}
-            <div className={`absolute ${navigationExpanded ? 'translate-y-[0%]'  : '-translate-y-[100%]' } ease-in-out transition-transform duration-150 top-0  z-20 bg-white w-full flex flex-col`}>
+            <div className={`absolute ${navigationExpanded ? 'translate-y-[0%]'  : '-translate-y-[100%]' } ease-in-out transition-transform duration-150 top-0  z-20 bg-white dark:bg-slate-800 w-full flex flex-col`}>
                 <button onClick={()=>{setNavigationExpanded(false)}} className="w-8 h-8 self-end m-2 border-2 border-solid border-amber-400">
-                    <FontAwesomeIcon icon={faClose} />
+                    <FontAwesomeIcon color="amber" icon={faClose} />
                 </button>
                     <a  href="#work" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Portfolio</a>
                     <a  href="#skills" onClick={()=>setNavigationExpanded(false)} className="hover:text-amber-400 p-3 font-semibold text-sm text-slate-500 dark:text-white">Skills</a>
