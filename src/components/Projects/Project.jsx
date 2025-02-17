@@ -17,7 +17,7 @@ const Project = ({data}) => {
         <>
             <div className="max-w-full shadow-xl rounded-lg lg:rounded-3xl  lg:max-h-[450px] dark:bg-slate-800 m-4 items-center flex-col-reverse lg:p-10 flex lg:flex-row justify-between">
                 <div className="lg:w-1/2 p-6  lg:p-10 text-gray-500 dark:text-gray-400">
-                    <h2 className="font-bold text-xl text-center lg:text-left my-2">{data.title}</h2>
+                    <h2 className="font-bold text-xl text-center lg:text-left my-2 capitalize">{data.title}</h2>
                     {/* <p className="font-semibold text-xl text-center lg:text-left"><i>{`Website`}</i></p> */}
                     <p className="lg:text-sm text-xs  text-justify">{ data?.description || data?.short_description || "No description available"}</p>
                     <div className="flex space-x-4 flex-wrap">

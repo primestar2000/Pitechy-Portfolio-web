@@ -102,8 +102,9 @@ const ProjectPage = () => {
               <span className="absolute p-2 rounded-full bg-white/60 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                 <PlayIcon width={15} height={15} />
               </span>
+              
             )}
-            <img className="w-full h-full object-cover" src={data.data.file} alt="" />
+            <img className="w-full h-full object-cover" src={data.thumbnail} alt="" />
           </div>
         ))}
       </div>
