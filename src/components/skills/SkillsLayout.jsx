@@ -8,7 +8,7 @@ const SkillsLayout = () => (
             <div className="max-w-[1920px] mx-auto">
                 <h2 className="text-[30px] py-10 text-slate-500 font-bold text-center">Skills</h2>
                 <div className="flex flex-col gap-5 lg:flex-row justify-evenly items-center">
-                    <div className="shadow-xl min-h-[200px] w-full max-w-[800px] p-10 rounded-2xl bg-white dark:bg-slate-800 ">
+                    <div className="shadow-xl h-fit lg:min-h-[200px] w-full max-w-[800px] p-10 rounded-2xl bg-white dark:bg-slate-800 ">
                         <h2 className="text-[18px] mb-4 font-semibold text-slate-500 text-center">FrontEnd</h2>
                         <div className="flex justify-center flex-wrap gap-5">
                             <Skill icon={faReact} title={"react js"} color={"violet"}/>
@@ -18,14 +18,14 @@ const SkillsLayout = () => (
                             <Skill icon={faHtml5} title={"html"} color={"red"}/>
                         </div>
                     </div>
-                    <div className="shadow-xl min-h-[200px] w-full max-w-[800px] p-10 rounded-2xl bg-white dark:bg-slate-800">
+                    <div className="shadow-xl h-fit lg:min-h-[200px] w-full max-w-[800px] p-10 rounded-2xl bg-white dark:bg-slate-800">
                         <h2 className="text-[18px] mb-4 font-semibold text-slate-500 text-center">Backend</h2>
                         <div className="flex justify-center flex-wrap gap-4">
                             <Skill icon={faLaravel} title={"Laravel"} color={"red"}/>
                             <Skill icon={faPhp} title={"php"} color={"indigo"}/>
                         </div>
                     </div>
-                    <div className="shadow-xl min-h-[200px] w-full max-w-[800px] p-10 rounded-2xl bg-white dark:bg-slate-800">
+                    <div className="shadow-xl h-fit lg:min-h-[200px] w-full max-w-[800px] p-10 rounded-2xl bg-white dark:bg-slate-800">
                         <h2 className="text-[18px] mb-4 font-semibold text-slate-500 text-center">OTHERS</h2>
                         <div className="flex justify-center flex-wrap gap-4">
                             <Skill icon={faGit} title={"git"} color={"red"}/>
