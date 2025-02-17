@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { db } from "../assets/firebase-config";
 import { useParams } from "react-router-dom";
 import CategorySection from "../components/Projects/CategorySection";
+import { toast } from "react-toastify";
 
 const ProjectPage = () => {
   const [loading, setLoading] = useState(false);
@@ -42,11 +43,15 @@ const ProjectPage = () => {
         setMedia([{ type: "image", data: { file: project.media.thumbnail } }, ...images, ...videos]);
       } catch (error) {
         console.error("Error fetching project data:", error);
+        toast.error(error);
       } finally {
         setLoading(false);
       }
     };
-    console.log(media)
+    if(media){
+      console.log(media)
+    }
+    toast.error('testing');
     fetchProject();
   }, [id]);
 
@@ -82,7 +87,7 @@ const ProjectPage = () => {
             {projectData?.title || "Project Title"}
           </h2>
           <ReadMoreText className="text-xs m-2 font-normal text-neutral-500 dark:text-neutral-300">
-            {projectData?.short_description || "No description available"}
+            { projectData?.description || projectData?.short_description || "No description available"}
           </ReadMoreText>
           <h2 className="text-lg font-medium text-neutral-500 text-center my-2">Categories</h2>
           <div className="text-slate-600 dark:text-slate-300">

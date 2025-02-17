@@ -5,6 +5,8 @@ import { db } from "../../assets/firebase-config";
 import {collection, getDocs, query, where} from "firebase/firestore"
 import Loader from "./Loader";
 import { toast } from "react-toastify";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWifi } from "@fortawesome/free-solid-svg-icons";
 const ProjectLayout = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -18,6 +20,7 @@ const ProjectLayout = () => {
                     setProjects((data).docs.map((doc)=>({...doc.data(), id: doc.id})))
                     setLoading(false);
                 } catch (error) {
+                    console.log(error);
                     toast.error('Couldn`t Load Projects, Please check your network.')
                 }
             } 
@@ -37,9 +40,15 @@ return (    <>
                     <Loader />
                 )
                 : (
+                    projects.length > 0 ?
                     projects.map((data)=>(
                         <Project key={data.id} data={data} />
                     ))
+                    : 
+                    <div className="flex items-center justify-center gap-x-2">
+                        <p className="text-red-500 text-center">Couldn't Load Projects please check Internet</p>
+                        <FontAwesomeIcon icon={faWifi} color="red" />
+                    </div>
                 )
                 }
             </div>
