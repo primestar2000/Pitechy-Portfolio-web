@@ -90,21 +90,21 @@ const ProjectPage = () => {
             { projectData?.description || projectData?.short_description || "No description available"}
           </ReadMoreText>
           <h2 className="text-lg font-medium text-neutral-500 text-center my-2">Categories</h2>
-          <div className="text-slate-600 dark:text-slate-300">
+          <div  className="text-slate-600 dark:text-slate-300">
             <CategorySection project={projectData} />
           </div>
         </div>
       </div>
       <div className="w-full flex h-fit mx-2 gap-x-2 lg:mx-6 rounded-xl p-4 bg-slate-50 dark:bg-slate-800 max-w-[700px]">
         {media.map((data, index) => (
-          <div  onClick={()=>{setActiveMediaIndex(index)}} key={index} className={`relative w-[100px] h-[100px] bg-neutral-600 rounded border-solid border-amber-500 ${ activeMediaIndex === index  && 'border-[3px]'}`}>
+          <div  onClick={()=>{setActiveMediaIndex(index)}} key={index} className={`relative w-[100px] h-[100px] bg-neutral-600 rounded border-solid border-[3px] border-slate-600 ${ activeMediaIndex === index  && ' border-amber-500'}`}>
             {data.type === "video" && (
               <span className="absolute p-2 rounded-full bg-white/60 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                 <PlayIcon width={15} height={15} />
               </span>
               
             )}
-            <img className="w-full h-full object-cover" src={data.thumbnail} alt="" />
+            <img className="w-full h-full object-cover" src={data.data.file} alt="" />
           </div>
         ))}
       </div>
