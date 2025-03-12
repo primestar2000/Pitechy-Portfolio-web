@@ -52,7 +52,7 @@ const ProjectPage = () => {
     // if(media){
     //   console.log(media)
     // }
-    toast.error('testing');
+  
     fetchProject();
     console.log(projectData.features)
     if (media.length > 0) {
