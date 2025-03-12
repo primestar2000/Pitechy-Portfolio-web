@@ -6,6 +6,7 @@ import Tag from "../tags/Tag";
 import { faGlobe, faNetworkWired } from '@fortawesome/free-solid-svg-icons';
 import CategorySection from './CategorySection';
 import { useNavigate } from 'react-router-dom';
+import { faLink } from '@fortawesome/free-solid-svg-icons/faLink';
 const Project = ({data}) => {
     const navigate = useNavigate();
     const handleClick = () => {
@@ -27,7 +28,20 @@ const Project = ({data}) => {
     
                     </div>
                     <CategorySection project={data} />
-                    <button onClick={handleClick} className="bg-violet-500 text-sm text-white p-2 my-5">Read More</button>
+                    {/* <div className='flex justify-between'>
+                        <div className='flex gap-1 items-center text-xs'>
+                        <span className={`h-3 w-3 ${data?.productionState ? 'bg-green-500' : 'bg-red-500'}  rounded-full`}></span>
+                        {data?.productionState ? 'Active': 'Not Active'} on Production
+                        </div>
+                        </div> */}
+                        <button onClick={handleClick} className="bg-violet-500 text-sm text-white p-2 my-5">Read More</button>
+                        {
+                            data.productionLink && 
+                            <a className='block text-violet-500' href={data?.productionLink}>
+                                <FontAwesomeIcon icon={faLink} />
+                                Visit Production
+                            </a>
+                        }
                 </div>
                 <div className="relative shadow-md lg:w-[500px] w-full p-2 lg:p-6 rounded-xl flex justify-center items-center bg-black" style={{backgroundImage: `url(${projectBgImage})`}} >
                     <div className="w-full h-[90%] flex justify-center items-center ">
@@ -36,15 +50,26 @@ const Project = ({data}) => {
                     <div className="w-full h-full flex flex-col justify-center items-center gap-10 bg-black absolute opacity-0 hover:opacity-80">
                         <h1 className="text-white text-[30px] text-center">View live Demo on</h1>
                         <div className='flex gap-4'>
-                            {/* <a href={"#"}>
+                            {
+                                data.productionLink && 
+                            <a href={data.productionLink}>
                                 <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faGlobe} />
                             </a>
+                            }
+                            {
+                                data.youtubeLink && 
                             <a href={data.Youtube_link}>
                                 <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faYoutube} />
                             </a>
+                            }
+                            {
+                                data.githubLink && 
                             <a href={data.github_repo}>
                                 <FontAwesomeIcon className="text-slate-500 hover:text-violet-500 hover:scale-125 dark:text-white transition-all ease-in-out delay-100 ease" size={"2x"} icon={faGithub} />
-                            </a> */}
+                            </a>
+                            }
+                           
+
                         </div>
     
                     </div>
